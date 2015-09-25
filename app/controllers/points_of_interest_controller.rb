@@ -3,7 +3,7 @@ class PointsOfInterestController < ApplicationController
   end
 
   def new
-    
+    @point_of_interest = PointOfInterest.new
   end
 
   def create
