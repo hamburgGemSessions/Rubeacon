@@ -22,4 +22,13 @@ ActiveRecord::Schema.define(version: 20151015175654) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "point_of_interests", force: :cascade do |t|
+    t.string   "name"
+    t.string   "address"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
