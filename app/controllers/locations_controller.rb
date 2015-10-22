@@ -5,6 +5,9 @@ class LocationsController < ApplicationController
   # GET /locations.json
   def index
     @locations = Location.all
+    @map_markers = @locations.map do |loc|
+      [loc.latitude, loc.longitude]
+    end
   end
 
   # GET /locations/1

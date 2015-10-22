@@ -23,5 +23,4 @@
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
 
-<div id="map" data-latitude="<%= @location.latitude%>" data-longitude="<%= @location.longitude %>"></div>
-
+<div id="map" data-locations="<%= [[@location.latitude.to_f, @location.longitude.to_f]].to_json %>"></div>

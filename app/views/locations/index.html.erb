@@ -31,3 +31,6 @@
 <br>
 
 <%= link_to 'New Location', new_location_path %>
+
+<div id="map" data-locations="<%= @map_markers.to_json %>"></div>
+
