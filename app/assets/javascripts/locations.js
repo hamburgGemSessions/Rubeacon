@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on('ready page:load', function(event) {
   // get data from view 
   var mapDiv = document.getElementById('map');
   var locations = mapDiv.dataset.locations;
